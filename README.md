@@ -18,7 +18,7 @@
 - has_many :comments
 - has_many :items
 - has_many :buyers
-- has_one :shippingaddress
+
 
 
 ## items テーブル
@@ -62,6 +62,7 @@
 ## Association
 - belongs_to :item
 - belongs_to :user
+- has_one :shippingaddress
 
 ## shippingaddress テーブル
 
@@ -73,8 +74,8 @@
 | address         | string   | null: false                  |
 | buildingname    | string   |                              |
 | tel             | interger | null: false                  |
-| user            | reference| null: false, foreign_key:true|
+| buyer           | reference| null: false, foreign_key:true|
 
 ## Association
 
-- belongs_to :user
+- belongs_to :buyer
