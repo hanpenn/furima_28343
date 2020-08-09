@@ -34,6 +34,7 @@
 | user            | reference| null: false, foreign_key:true|
 | postage         | interger | null: false                  |
 | prefecture      | interger | null: false                  |
+| category        | interger | null: false                  |
 
 ## Association
 - has_many :comments
