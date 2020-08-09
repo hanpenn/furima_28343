@@ -25,7 +25,7 @@
 
 | Column          | Type     | Options                      |
 | ----------------| -------- | ---------------------------- |
-| prace           | interger | null: false                  |
+| price           | interger | null: false                  |
 | name            | string   | null: false                  |
 | condition       | interger | null: false                  |
 | image           | string   | null: false                  |
