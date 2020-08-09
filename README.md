@@ -18,6 +18,7 @@
 - has_many :comments
 - has_many :items
 - has_many :buyers
+- has_one :shippingaddress
 
 
 ## items テーブル
@@ -43,8 +44,8 @@
 
 | Column  | Type        | Options                        |
 | ------- | ----------- | ------------------------------ |
-| user_id | references  | null: false, foreign_key: true |
-| item_id | references  | null: false, foreign_key: true |
+| user    | references  | null: false, foreign_key: true |
+| item    | references  | null: false, foreign_key: true |
 | comment | text        | null: false                    |
 
 ## Association
@@ -62,3 +63,18 @@
 - belongs_to :item
 - belongs_to :user
 
+## shippingaddress テーブル
+
+| Column          | Type     | Options                      |
+| ----------------| -------- | ---------------------------- |
+| post_code       | interger | null: false                  |
+| prefececture    | interger | null: false                  |
+| city            | string   | null: false                  |
+| address         | string   | null: false                  |
+| buildingname    | string   |                              |
+| tel             | interger | null: false                  |
+| user            | reference| null: false, foreign_key:true|
+
+## Association
+
+- belongs_to :user
