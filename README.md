@@ -39,9 +39,6 @@
 - belongs_to :user
 - has_one :buyer
 
-## Association
-- belongs_to :user
-
 ## comments テーブル
 
 | Column  | Type        | Options                        |
@@ -52,9 +49,6 @@
 
 ## Association
 - belongs_to :user
-- belongs_to :item
-
-## Association
 - belongs_to :item
 
 ## buyers テーブル
