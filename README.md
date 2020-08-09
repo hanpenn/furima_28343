@@ -73,7 +73,7 @@
 | city            | string   | null: false                  |
 | address         | string   | null: false                  |
 | buildingname    | string   |                              |
-| tel             | interger | null: false                  |
+| tel             | string   | null: false                  |
 | buyer           | reference| null: false, foreign_key:true|
 
 ## Association
