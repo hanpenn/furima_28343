@@ -30,7 +30,7 @@
 | image           | string   | null: false                  |
 | discription     | text     | null: false                  |
 | status          | interger | null: false                  |
-| user_id         | reference| null: false, foreign_key:true|
+| user            | reference| null: false, foreign_key:true|
 | postage         | interger | null: false                  |
 | prefecture      | interger | null: false                  |
 
